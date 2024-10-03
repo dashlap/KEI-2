@@ -50,7 +50,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgba(143, 138, 180, 0.856);
+    background-color: rgba(142, 131, 227, 0.856);
     background-repeat: no-repeat;
 }
 
@@ -63,15 +63,11 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 .yslugi {
-    
-
-    
-    
+    height: 80vh;
     background-color: rgb(173, 195, 255);
-    
 }
 
-.title{
+.ysl_zag {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -87,6 +83,11 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     
 }
+.yslugi p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 39, 148);
+}
 .yslugi_list {
     display: flex;
     flex-direction: column;
@@ -100,12 +101,21 @@ nav {
     border: 3px;
 
 }
-.onas {
+.onas_zag {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.onas {
+    height: 80vh;
     background-color: rgb(173, 195, 255);
+}
+.onas p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 .onas h2 {
     margin-top: 20px;
@@ -113,24 +123,44 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 .contacti {
+
+    height: 80vh;
+    background-color: rgb(173, 195, 255);
+}
+.con_zag {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    background-color: rgb(173, 195, 255);
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .contacti h2{
     margin-top: 20px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.contacti a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(26, 26, 120);
+}
+.contacti p {
+    font-size: 22px;
+    color: rgb(26, 26, 120);
+}
+.network {
+    display: flex;
+    flex-direction: column;
+
+}
 footer {
     display: flex;
     justify-content: center;
+    align-items: end;
     height: 30vh;
     background-color: rgb(17, 17, 17);
 }
 footer p {
     color: rgba(255, 255, 255, 0.767);
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
