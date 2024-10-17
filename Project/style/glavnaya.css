@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 22, 22);
+}
+
+.logo {
+
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+.nav {
+    
+    
+}
