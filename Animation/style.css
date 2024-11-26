@@ -1,0 +1,39 @@
+.animation_pic img {
+    height: 120px;
+    width: 120px;
+}
+
+.animation_pic {
+    animation: my-anim 10s ease 0s infinite normal;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes my-anim{
+    0% {
+        margin-top: 0%;
+        margin-left: 10%;
+
+    }
+
+    20% {
+        margin-top: 55%;
+        margin-left: 15%;
+    }
+
+    40% {
+        margin-top: 30%;
+        margin-left: 20%;
+    }
+    60% {
+        margin-top: 55%;
+        margin-left: 22%;
+    }
+    80% {
+        margin-top: 45%;
+        margin-left: 25%;
+    }
+    100% {
+        margin-top:55%;
+        margin-left: 27%;
+    }
+}
