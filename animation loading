@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Анимация загрузки Minecraft</title>
+<style>
+body {
+  background-image: url('cobblestone.png'); /* Замените на путь к вашему изображению */
+  background-size: 30px 30px; /* Размер одного блока булыжника */
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: monospace;
+  color: white;
+}
+
+.minecraft-loader {
+  width: 300px; /* Увеличенная ширина */
+  height: 100px; /* Увеличенная высота */
+  background-color: #555;
+  border: 4px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #00aa00;
+  animation: load 5s linear forwards; /* Увеличение времени анимации */
+}
+
+@keyframes load {
+  to {
+    width: 100%;
+  }
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px; /* Увеличение размера текста */
+}
+
+
+@keyframes swing {
+  to { opacity: 1; }
+}
+
+@keyframes crack {
+  to {
+    transform: translate(50px, 50px) scale(1.5) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.pixelated {
+  font-size: 24px; /* Увеличение размера текста */
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000; /* Увеличен размер тени */
+}
+</style>
+</head>
+<body>
+
+<div class="minecraft-loader">
+  <div class="progress-bar"></div>
+  <div class="percentage pixelated">0%</div>
+  <div class="pickaxe"></div>
+  <div class="block"></div>
+</div>
+
+<script>
+let progress = 0;
+const progressBar = document.querySelector('.progress-bar');
+const percentage = document.querySelector('.percentage');
+const intervalId = setInterval(() => {
+  progress += 1;
+  progressBar.style.width = progress + '%';
+  percentage.textContent = progress + '%';
+  if (progress >= 100) {
+    clearInterval(intervalId);
+    percentage.textContent = 'Готово';
+  }
+}, 50);
+</script>
+
+</body>
+</html>
+
