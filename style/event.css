@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    position: absolute;
+    opacity: calc(1);
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    margin: 7px;
+}
+.logo p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Reaver", serif;
+    opacity: .8;
+    
+}
+
+.nav a {
+    font-size: 18px;
+    font-family: "Reaver", serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    opacity: .8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 3px 0px;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+    
+.link {
+    border-bottom: transparent solid 2px;
+    
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link:hover{
+    color: #fff;
+    opacity: unset;
+}
+
+.main_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/qvopa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main_page h1 {
+    display: flex;
+    padding: 20px;
+    color: #B7CEEC;
+    font-size: 42px;
+    font-family: "Reaver", serif;
+    text-align: center;
+    text-shadow: 5px 6px 10px rgba(0, 0, 0);
+    border: solid;
+    border-radius: 30px;
+    border-color: #00000000;
+    background: rgba(22, 25, 40, 0.699);
+    
+}
+
+.main_page p {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    opacity: calc(.8);
+    font-family: "Reaver", serif;
+    text-shadow: 5px 6px 10px rgb(0, 0, 0);
+}
