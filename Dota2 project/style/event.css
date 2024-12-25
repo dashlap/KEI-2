@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+main{
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    position: absolute;
+    opacity: calc(1);
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    margin: 7px;
+}
+.logo p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Reaver", serif;
+    opacity: .8;
+    
+}
+
+.nav a {
+    font-size: 18px;
+    font-family: "Reaver", serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    opacity: .8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 3px 0px;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+    
+.link {
+    border-bottom: transparent solid 2px;
+    
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link:hover{
+    color: #fff;
+    opacity: unset;
+}
+
+.main_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/qvopa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.main_page h1 {
+    display: flex;
+    padding: 20px;
+    color: #B7CEEC;
+    font-size: 42px;
+    font-family: "Reaver", serif;
+    text-align: center;
+    text-shadow: 5px 6px 10px rgba(0, 0, 0);
+    border: solid;
+    border-radius: 30px;
+    border-color: #00000000;
+    background: rgba(23, 37, 109, 0.149);
+    
+    
+}
+
+.main_page p {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    opacity: calc(.8);
+    font-family: "Reaver", serif;
+    text-shadow: 5px 6px 10px rgb(0, 0, 0);
+}
+
+.button a {
+    text-align: center;
+    color: #032483;
+    font-size: 20px;
+    font-family: "Reaver", serif;
+    text-decoration: none;
+}
+
+.main_page button {
+    background-color: #a7effb;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    bottom: 15%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.main_page button:hover {
+    border: 3px solid #032483;
+}
+
+
+.get_gifts {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(5,111,180);
+    background: linear-gradient(145deg, rgba(5,111,180,1) 10%, rgba(12,52,145,1) 29%, rgba(31,20,96,1) 58%, rgba(43,23,92,1) 83%, rgba(22,7,85,1) 100%);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 3%;
+}
+
+.gift {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    background: #ad0b0bbb;
+    color: #00000000;
+    border-radius: 7%;
+    padding: 0.75%;
+}
+
+.gift img {
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-radius: 7%;
+    color: #00000000;
+}
+
+.gift p {
+    color: #fff;
+    font-size: 20px;
+    opacity: calc(.8);
+    font-family: "Reaver", serif;
+    text-shadow: 5px 6px 10px rgb(0, 0, 0);
+}
+
+
+.gift-arcana {
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: solid;
+    background: #ad0b0bbb;
+    color: #00000000;
+    border-radius: 7%;
+    padding: 0.75%;
+}
+
+.gift-arcana p {
+    color: #fff;
+    font-size: 20px;
+    opacity: calc(.8);
+    font-family: "Reaver", serif;
+    text-shadow: 5px 6px 10px rgb(0, 0, 0);
+}
+
+.gift-arcana img {
+    width: 200px;
+    height: 250px;
+    border: solid;
+    border-radius: 7%;
+    color: #00000000;
+}
