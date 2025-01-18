@@ -1,0 +1,61 @@
+.function {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    height: 35px;
+    width: 95px;
+    background-color: rgb(13, 218, 218);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: midnightblue;
+}
+.two {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(61, 139, 109);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: bisque;
+}
+.three {
+    height: 45px;
+    width: 105px;
+    background-color: darkblue;
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: white;
+}
+.four {
+    height: 50px;
+    width: 110px;
+    background-color: rgb(90, 73, 185);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: deeppink;
+}
+.five {
+    height: 45px;
+    width: 100px;
+    background-color: rgb(184, 29, 81);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: mediumblue;
+}
+.six {
+    height: 40px;
+    width: 95px;
+    background-color: rgb(172, 50, 20);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: rgb(207, 192, 52);
+}
