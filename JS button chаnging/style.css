@@ -1,0 +1,28 @@
+.array {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.red {
+    height: 50px;
+    width: 110px;
+    font-size: 14px;
+    background-color: rgb(124, 11, 11);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: rgb(0, 0, 0);
+}
+
+.blue {
+    height: 50px;
+    width: 110px;
+    font-size: 14px;
+    background-color: rgb(0, 2, 148);
+    border-radius: 10px;
+    border: transparent;
+    margin: 10px 10px;
+    color: rgb(255, 255, 255);
+}
+
