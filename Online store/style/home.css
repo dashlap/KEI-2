@@ -1,0 +1,500 @@
+@font-face {
+    font-family: federant;
+    src: url(../Assets/fonts/Federant-Regular.ttf);
+}
+
+@font-face {
+    font-family: IMB;
+    src: url(../Assets/fonts/IBMPlexSerif-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #090904;
+    border-bottom: 1px solid #a50c0a;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 4vw;
+}
+.logo p {
+    margin-left: 0.5vw;
+    color: #a50c0a;
+    font-family: federant;
+    font-size: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: IMB;
+    color: #f0f4f5;
+    margin-left: 50px;
+}
+
+.link:hover {
+    border-bottom: 2px solid rgb(208,169,25);
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../Assets/img/pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #a50c0a;
+}
+
+.home h1 {
+    color: #000000;
+    font-family: federant;
+    font-size: 50px;
+}
+
+.home p {
+    color: #a50c0a;/*#cc001e */
+    font-family: IMB;
+    font-size: 1.3rem;
+}
+
+.catalog {
+    display: flex;
+    background-color: #090904;/*#004d00*/
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #a50c0a;
+    padding: 0 0 5% 0;
+}
+
+.catalog h2 {
+    color: #f0f4f5;/*#46000a #070202*/
+    font-size: 30px;
+    font-family: IMB;
+    margin-top: 2%;
+}
+
+.burger_menu {
+    display: flex;
+    margin-top: 2%;
+    align-self: flex-end;
+}
+
+.menu_btn {
+    background: rgb(208,169,25);
+    background: linear-gradient(90deg, rgba(208,169,25,1) 6%, rgba(184,150,28,1) 33%, rgba(223,204,77,1) 58%, rgba(164,138,0,1) 83%, rgba(224,210,74,1) 100%);
+    color: #131313;
+    padding: 9%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 160px;
+    font-family: IMB;
+}
+
+  
+.filter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 3rem;
+}
+  
+.filter_menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 3.4rem;
+    border-radius: 5px;
+}
+  
+.filter_menu a {
+    color: black;
+    padding: 8% 10%;
+    text-decoration: none;
+    display: block;
+    border: solid 1px;
+    border-color: #00000011;
+    font-family: IBM;
+    font-size: 1.1rem;
+}
+  
+.filter_menu a:hover {
+    background-color: #ffdfdf;
+    border-radius: 5px;
+}
+.filter:hover .filter_menu {
+    display: block;
+    border-radius: 5px;
+}
+.filter:hover .menu_btn {
+    background-color: #04003d; 
+    color: #f9f9f9;
+}
+
+.products_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 2%;
+}
+/*Перевела в другие единицы*/
+.armor {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 30px 0px 0px;
+    border: 1px solid #00000056;
+    border-radius: 17px;
+    
+}
+
+.armor img {
+    width: 275px;
+    height: 280px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.armor a, p {
+    text-decoration: none;
+    font-family: IMB;
+    font-size: 16px;
+    padding-top: 5px;
+    margin: 0;
+    color: #f0f4f5; /*#27c296 #2ea98c f0f4f5*/
+}
+
+.text_armor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px 10px 10px;
+    background-color:#390007; /*030f0f #0e0e0f #390007*/
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+.infa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../Assets/img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #a50c0a;
+    
+}
+
+.infa h2 {
+    color: #f0f4f5;/*#46000a #070202*/
+    font-size: 30px;
+    font-family: IMB;
+    margin-top: 30px;
+}
+
+.infa span {
+    color: #f0f4f5;
+    font-family: IMB;
+    font-size: 20px;
+    margin: 50px;
+    border: solid;
+    border-color: transparent;
+    background-color: #09090459;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.5;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #090904;
+    
+}
+
+.contacts h2 {
+    color: #f0f4f5;/*#46000a #070202*/
+    font-size: 24px;
+    font-family: IMB;
+    margin-top: 20px;
+}
+
+.contacts_list p {
+    color: #a50c0a;/*#46000a #070202*/
+    font-size: 20px;
+    font-family: federant;
+    margin: 5%; 
+}
+
+.contacts_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+/* Адаптивная верстка */
+
+/* Для телефонов (до 480px) */
+@media (min-width: 300px) and (max-width: 767px) {
+    nav {
+        
+        align-items: center;
+        width: 100%;
+        display: flex;
+    }
+    .logo {
+        width: 35%;
+    }
+    .logo img {
+        width: 30%;
+    }
+
+    .logo p {
+        font-size: 4vw;
+    }
+
+    .navigation {
+        align-items: center;
+        width: 60%;
+        display: flex;
+        padding: 0 1% 0 0;
+    }
+
+    .navigation a {
+        font-size: 3vw;
+        margin: 0 2% 0 2%;
+
+    }
+
+    .home h1 {
+        font-size: 8vw;
+    }
+
+    .home p {
+        font-size: 3vw;
+    }
+
+    .catalog h2 {
+        margin-top: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .filter {
+        margin-right: 7vw;
+        
+    }
+    .filter_menu {
+        top: 90%;
+        width: 27vw;
+    }
+
+    .filter_menu a {
+        font-size: 3vw;
+    }
+    .menu_btn {
+        padding: 3vw;
+        width: 27vw;
+        font-size: 3vw;
+    }
+
+    .products_list {
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .armor {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        margin: 2%;
+        
+    }
+
+    .text_armor {
+        width: 100%;
+        padding: 0 0 5% 0;
+    }
+
+    .text_armor a, p {
+        font-size: 2.5vw;
+    }
+
+    .armor img {
+        width: 100%;
+    }
+    .infa h2 {
+        font-size: 1.5rem;
+    }
+
+    .infa span {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+        max-width: 90%; /* Увеличиваем ширину текста */
+    }
+
+    .infa img {
+        margin-top: 0.5rem;
+    }
+    .contacts h2 {
+        font-size: 1.2rem;
+    }
+
+    .contacts_list {
+        flex-direction: column; /* Ставим контакты в столбец */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contacts_list p {
+        font-size: 2.5vw;
+        margin: 2vw; /* Добавляем отступы между контактами */
+    }
+}
+
+/* Для планшетов (до 700px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        align-items: center;
+        width: 100%;
+        display: flex;
+    }
+    .logo {
+        width: 40%;
+        
+    }
+    .logo img {
+        width: 7vw;
+        margin: 2%;
+    }
+
+    .logo p {
+        font-size: 3vw;
+    }
+
+    .navigation {
+        align-items: center;
+        width: 60%;
+        display: flex;
+        padding: 0 1% 0 0;
+    }
+
+    .navigation a {
+        font-size: 2.5vw;
+        margin: 0 2% 0 2%;
+
+    }
+
+    .home h1 {
+        font-size: 6vw;
+    }
+
+    .home p {
+        font-size: 3vw;
+    }
+
+    .catalog h2 {
+        margin-top: 3%;
+        font-size: 3.5vw;
+    }
+
+    .filter {
+        margin-right: 7vw;
+        margin-bottom: 3%;
+    }
+
+    .menu_btn {
+        padding: 1.5vw;
+        width: 20vw;
+        font-size: 2.2vw;
+    }
+    .filter_menu {
+        top: 90%;
+        width: 20vw;
+    }
+    
+    .filter_menu a {
+        font-size: 2.2vw;;
+    }
+    
+    .products_list {
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .armor {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        margin: 1%;
+        
+    }
+
+    .text_armor {
+        width: 100%;
+        padding: 0 0 5% 0;
+    }
+
+    .text_armor a, p {
+        font-size: 1.7vw;
+    }
+
+    .armor img {
+        width: 100%;
+    }
+    .infa h2 {
+        margin-top: 3%;
+        font-size: 3.5vw;
+    }
+
+    .infa span {
+        font-size: 2vw;
+        padding: 2%;
+        max-width: 90%; /* Увеличиваем ширину текста */
+        margin: 3%;
+    }
+
+    .contacts h2 {
+        font-size: 3vw;
+    }
+
+    .contacts_list {
+        flex-direction: column; /* Ставим контакты в столбец */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contacts_list p {
+        font-size: 2.5vw;
+        margin: 2vw; /* Добавляем отступы между контактами */
+    }
+}
+
